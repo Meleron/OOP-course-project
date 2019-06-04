@@ -1,0 +1,12 @@
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\bin\Debug\OOPWinFroms.exe.config
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\bin\Debug\OOPWinFroms.exe
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\bin\Debug\OOPWinFroms.pdb
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.csprojAssemblyReference.cache
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.Properties.Resources.resources
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.csproj.GenerateResource.cache
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.csproj.CoreCompileInputs.cache
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.exe
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.pdb
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.WorkForm.resources
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.RentCarForm.resources
+H:\Other\BSUIR\OOPLabs\OOPWinFroms\OOPWinFroms\obj\Debug\OOPWinFroms.ReturnRentedCarForm.resources

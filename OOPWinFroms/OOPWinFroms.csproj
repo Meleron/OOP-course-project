@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CEC3088-653B-4914-A582-EABD08D6BC47}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OOPWinFroms</RootNamespace>
+    <AssemblyName>OOPWinFroms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.15\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cars\AutoParkService.cs" />
+    <Compile Include="Cars\BodyworkClass.cs" />
+    <Compile Include="Cars\CarClass.cs" />
+    <Compile Include="Cars\CarPart.cs" />
+    <Compile Include="Cars\EngineClass.cs" />
+    <Compile Include="Cars\Types.cs" />
+    <Compile Include="Database\SQLBodyworks.cs" />
+    <Compile Include="Database\SQLCars.cs" />
+    <Compile Include="Database\SQLClients.cs" />
+    <Compile Include="Database\SQLEngines.cs" />
+    <Compile Include="Database\SQLRents.cs" />
+    <Compile Include="Database\SQLTransactions.cs" />
+    <Compile Include="Finances\TransactionClass.cs" />
+    <Compile Include="Finances\TransactionService.cs" />
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RentCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RentCarForm.Designer.cs">
+      <DependentUpon>RentCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReturnRentedCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReturnRentedCarForm.Designer.cs">
+      <DependentUpon>ReturnRentedCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowAllClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowAllClients.Designer.cs">
+      <DependentUpon>ShowAllClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowAllRents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowAllRents.Designer.cs">
+      <DependentUpon>ShowAllRents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowAllTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowAllTransactions.Designer.cs">
+      <DependentUpon>ShowAllTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowCarsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowCarsListForm.Designer.cs">
+      <DependentUpon>ShowCarsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowRentsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowRentsListForm.Designer.cs">
+      <DependentUpon>ShowRentsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkForm.Designer.cs">
+      <DependentUpon>WorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IRepository.cs" />
+    <Compile Include="Main\MenuService.cs" />
+    <Compile Include="Main\Registration.cs" />
+    <Compile Include="Main\Session.cs" />
+    <Compile Include="People\ClientClass.cs" />
+    <Compile Include="People\ClientService.cs" />
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renting\RentClass.cs" />
+    <Compile Include="Renting\RentService.cs" />
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RentCarForm.resx">
+      <DependentUpon>RentCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReturnRentedCarForm.resx">
+      <DependentUpon>ReturnRentedCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowAllClients.resx">
+      <DependentUpon>ShowAllClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowAllTransactions.resx">
+      <DependentUpon>ShowAllTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowCarsListForm.resx">
+      <DependentUpon>ShowCarsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowRentsListForm.resx">
+      <DependentUpon>ShowRentsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkForm.resx">
+      <DependentUpon>WorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
